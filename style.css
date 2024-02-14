@@ -1,0 +1,108 @@
+*, ::before, ::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+}
+body{
+    background: linear-gradient(#5b87e5, #37d1dc);
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    width: 80%;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 50%;
+    min-width: 320px;
+    background-color: #f1f1f1;
+    margin: auto;
+    padding: 2rem 4rem;
+    position: relative;
+    box-shadow: 0px 4px 10px 1px rgba(0,0,0,0.6);
+}
+
+.dataUser{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    font-size: 16px;   
+}
+
+
+.btn {
+    display: block; 
+    width: fit-content; 
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fabe33;
+    font-weight: bold;
+    box-shadow: 0px 4px 10px 1px rgba(0,0,0,0.6);
+}
+
+h3{
+    font-weight: lighter;
+    margin-bottom: 2rem;
+}
+
+h3 span{
+    font-weight: bold;
+}
+
+.dataUser input {
+    width: 300px; 
+    padding: 10px;
+    border-radius: 5px;
+    box-sizing: border-box; 
+    box-shadow: 0px 4px 10px 1px rgba(0,0,0,0.6);
+    margin-top: 5Px;
+    outline: none;
+}
+
+.result{
+    font-size: 32px;
+    font-weight: bold;
+}
+
+/******************************/ 
+
+.modal {
+    visibility: hidden;
+    width: 80%;
+    margin: 10px auto 0;
+    opacity: 0;
+    transition: 0.6s;
+    transform: translateX(-150%);
+    background-color: rgba(252,252,252,1);
+    padding: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    position: absolute;
+    top: 40%;
+    transition: 1s ease;
+    text-align: center;
+    box-shadow: 0px 1px 10px 1px black;
+}
+
+.modal input{
+    padding: 10px;
+    margin: 5px auto;
+
+}
+
+
+
+.modalOut{
+    visibility: visible;
+    transform: translateX(0);
+    opacity: 1;
+}

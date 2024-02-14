@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imc</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h3>Calcul <span>d'IMC</span></h3>
+        <form action="">
+            <div class="dataUser">
+                <div class="dataUsertaille">
+                    <label for="taille">Votre taille en centimetre. Ex:180</label><br>
+                    <input type="number" placeholder="Votre taille en centimètre" id="taille">
+                </div>
+                <div class="dataUserPoids">
+                    <label for="poids">Votre poids en Kg. Ex:80</label><br>
+                    <input type="number" placeholder="Votre poids en kilogrammes" id="poids">
+                </div>
+            </div>
+
+            <input type="submit" value="Calculer un IMC" class="btn">
+        </form>
+
+        <p class="result">0</p>
+
+        <p class="categorie">En attente du résultat..</p>
+
+        <div class="modal" id="myModal">
+            <p>Veuillez remplir les deux champs avant de calculer l'IMC.</p>
+            <input type="submit" value="compris" id="close" class="btn">
+        </div>
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
